@@ -8,5 +8,5 @@
     "dev": "node --watch src/index.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
 }
