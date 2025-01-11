@@ -1,4 +1,7 @@
 import { useState } from 'react'
+import Navbar from './components/Navbar'
+import Sidebar from './components/sidebar'
+import VideoSection from './components/VideoSection'
 import './App.css'
 
 function App() {
@@ -6,9 +9,14 @@ function App() {
 
   return (
     <>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+      <Navbar />
+      <div className='flex h-screen'>
+        <div className='w-1/5'>
+          <Sidebar />
+        </div>
+        <VideoSection /> 
+      </div>
+
     </>
   )
 }
